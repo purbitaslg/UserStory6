@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+ 
+          h2{
+                color: black;
+                background-color: olivedrab;
+                text-align: center;
+                border: 1px solid black;
+            }
+            tr:nth-child(odd){
+                list-style-type: none;
+                margin: 10px;
+                padding: 30px;
+                overflow: hidden;
+                background-color: rgb(175, 84, 179);
+            }
+            td:nth-child(odd){
+                
+                list-style-type:none;
+                margin: 10px;
+                padding: 30px;
+                overflow: hidden;
+                background-color: yellow;
+            }
+            
+            .footer{
+                background-color: rgb(118, 202, 235);
+                padding: 10px;
+                text-align: center;
+            }
+            table,th,td{
+                border: 2px solid black;
+            }
+            
+  </style>
+</head>
+<body>
+ 
+<div class="container">
+  <h2>THE LIST OF THE BOOKS UNDER THE AUTHOR YOU WANT</h2>
+  <p>Here you are able to see the names:</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>BookName</th>
+        <th>price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="danger">
+        <td>JAVA</td>
+        
+ 
+        <td>400</td>
+      </tr>
+      <tr class ="success">
+        <td>Networking</td>
+        
+        <td>960</td>
+      </tr>
+      <tr class="info">
+        <td>Operating System</td>
+        
+        
+        <td>700</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="footer">
+    
+    <img src="download.jpeg" />
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head> 
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {margin: 30px;} 
+      
+  
+    h2{
+        color: black;
+        background-color: rgb(178, 82, 197);
+        text-align: center;
+        border: 1px solid black;
+    }
+    tr{
+        list-style-type: none;
+        margin: 10px;
+        padding: 30px;
+        overflow: hidden;
+        background-color: rgb(178, 82, 197);
+    }
+    td{
+        
+        list-style-type:none;
+        margin: 10px;
+        padding: 30px;
+        overflow: hidden;
+        background-color: rgb(247, 64, 125);
+    }
+    
+    .footer{
+        background-color: olivedrab;
+        padding: 10px;
+        text-align: center;
+    }
+    table,th,td{
+        border: 2px solid black;
+        color: cornsilk;
+    }
+    
+    
+</style>
+   
+    </head>
+    <body> 
+    <table id="myTable" border="1"> 
+        <thead>
+            <tr>
+              <th>BookName</th>
+              <th>AuthorName</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="success">
+              <td>DatabaseManagement</td>
+              <td>Abc</td>
+      
+              <td>400</td>
+            </tr>
+            <tr class="success">
+              <td>Automata</td>
+              <td>HS</td>
+              <td>850</td>
+            </tr>
+            <tr class="info">
+              <td>Compiler Designing</td>
+              <td>abc</td>
+              
+              <td>700</td>
+            </tr>
+          </tbody>
+    </table><form> 
+    <input type="button" onclick="changeContent()" value="Change content"> 
+    </form>
+    <script>
+    function changeContent()
+    {
+        rn = window.prompt("Input the Row number(0,1,2)", "0");
+        cn = window.prompt("Input the Column number(0,1)","0");
+        content = window.prompt("Input the Cell content");  
+        var x=document.getElementById('myTable').rows[parseInt(rn,10)].cells;
+        x[parseInt(cn,10)].innerHTML=content;
+    }
+    </script>
+    </body>
+</html>
